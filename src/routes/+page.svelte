@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cart, totalItems, totalPrice } from '$lib/store/cart';
+	import { cart } from '$lib/store/cart';
 	const addFlower = () => {
 		cart.add({
 			id: 'flower1',
@@ -11,7 +11,7 @@
 
 <div class="w-full pt-16">
 	<div class="-mx-4">
-		<img src="/src/lib/assets/banner.avif" alt="Flower banner" class="w-full object-cover" />
+		<img src="/src/lib/assets/banner.avif" alt="Flower banner" class="h-full w-full object-cover" />
 		<div class="grid place-items-center gap-4 p-7">
 			<h1 class="text-3xl font-bold">Chào Mùa Thu ️🍂</h1>
 			<p class="text-center text-lg">Bắt đầu mùa thu rực rỡ với những đóa hoa này</p>

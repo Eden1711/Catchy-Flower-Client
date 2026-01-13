@@ -1,17 +1,16 @@
 <script lang="ts">
 	import CartIcon from '$lib/components/icons/CartIcon.svelte';
 	import MenuIcon from '$lib/components/icons/MenuIcon.svelte';
-	import { onMount } from 'svelte';
-	import Drawer from './Drawer.svelte';
-	import CartDrawer from './CartDrawer.svelte';
 	import { totalItems } from '$lib/store/cart';
+	import CartDrawer from './CartDrawer.svelte';
+	import Drawer from './Drawer.svelte';
 
-	let open = false;
-	let openCart = false;
-	let showHeader = true;
-	let lastScrollY = 0;
+	let open = $state(false);
+	let openCart = $state(false);
+	let showHeader = $state(true);
+	let lastScrollY = $state(0);
 
-	onMount(() => {
+	$effect(() => {
 		const handleScroll = () => {
 			const currentY = window.scrollY;
 			showHeader = currentY < lastScrollY;
@@ -27,11 +26,11 @@
 	style:transform={showHeader ? 'translateY(0)' : 'translateY(-100%)'}
 	style:transition="transform 0.2s ease-in-out"
 >
-	<button aria-label="Open menu" on:click={() => (open = true)} class="p-2">
+	<button aria-label="Open menu" onclick={() => (open = true)} class="p-2">
 		<MenuIcon />
 	</button>
 	<h1 class="">Catchy Flower</h1>
-	<button aria-label="Open card" on:click={() => (openCart = true)} class="relative p-2">
+	<button aria-label="Open card" onclick={() => (openCart = true)} class="relative p-2">
 		<CartIcon />
 		<div
 			class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white"
