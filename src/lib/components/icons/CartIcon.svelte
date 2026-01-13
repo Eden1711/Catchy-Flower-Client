@@ -8,8 +8,8 @@
 	stroke-width="2"
 	stroke-linecap="round"
 	stroke-linejoin="round"
-	class="lucide lucide-shopping-basket-icon lucide-shopping-basket"
-	><path d="m15 11-1 9" /><path d="m19 11-4-7" /><path d="M2 11h20" /><path
-		d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"
-	/><path d="M4.5 15.5h15" /><path d="m5 11 4-7" /><path d="m9 11 1 9" /></svg
+	class="lucide lucide-shopping-bag-icon lucide-shopping-bag"
+	><path d="M16 10a4 4 0 0 1-8 0" /><path d="M3.103 6.034h17.794" /><path
+		d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"
+	/></svg
 >

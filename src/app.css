@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@theme {
+	--color-rose-50: #fff1f2;
+	--color-rose-100: #ffe4e6;
+	--color-rose-200: #fecdd3;
+	--color-rose-500: #f43f5e;
+	--color-rose-600: #e11d48;
+	--color-rose-900: #881337;
+
+	--font-sans: 'Quicksand', sans-serif;
+	--font-serif: 'Playfair Display', serif;
+}
+
 body {
-	font-family: 'proxima-nova', sans-serif;
+	font-family: var(--font-sans);
 	margin: 0;
 	padding: 0;
 }

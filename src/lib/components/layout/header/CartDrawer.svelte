@@ -14,7 +14,7 @@
 	<!-- Drawer -->
 	<aside
 		transition:fly={{ x: 300, duration: 400 }}
-		class="fixed top-0 right-0 z-20 flex h-full w-64 flex-col bg-white shadow-lg"
+		class="fixed top-0 right-0 z-20 flex h-full w-full flex-col bg-white shadow-lg sm:w-[400px]"
 	>
 		<div class="flex items-center justify-between border-b p-4">
 			<span class="font-bold">Cart</span>
